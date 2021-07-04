@@ -1,1 +1,1 @@
-web: python BIG_BEN.py
+worker: python BIG_BEN.py
