@@ -1,3 +1,5 @@
+import os
+
 import discord
 from discord.ext import tasks
 
@@ -7,7 +9,7 @@ class MyClient(discord.Client):
         super().__init__(*args, **kwargs)
 
         # channel id for my test channel
-        self.channel_id = 1  #stub
+        self.channel_id = os.environ(['CHANNEL_ID'])
         # start the task to run in the background
         self.my_background_task.start()
 
@@ -25,5 +27,5 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-token = 'removed' #stub
+token = os.environ(['TOKEN'])
 client.run(token)
