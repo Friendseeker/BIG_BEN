@@ -4,6 +4,11 @@ A discord bot that spams "BONG" for every 30 seconds. Inspired by telegram Bot B
 
 Heroku configs are attached for easy cloud deployment
 
+## Tech Stack
+
+- discord.py
+- Heroku (CI)
+
 ## TODO
 
 - Detailed bot setup instruction
